@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+	background-blend-mode: screen;
+	text-align: center;
+}
+
+header {
+	text-align: center;
+	padding: 12px;
+}
+
+header a {
+	display: block;
+	position: relative;
+	left: 40vw;
+	text-decoration: none;
+	top: 8px;
+	color: #ff0;
+	margin: 4px;
+}
+
+header img {
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+
+#msg {
+	color: #20ffff;
+	font-size: 18px;
+	font-style: bold;
+	display: inline-block;
+	margin: 0;
+}
+
+
+
+#wrapper {
+	white-space: nowrap;
+	height: 200px;
+}
+
+#wrapper div {
+	width: 100px;
+	height: 180px;
+	margin: 4px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#wrapper span {
+	border: solid 1px #505050;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#btn {
+	display: inline-block;
+	background-color: #dddddd;
+	border-radius: 12px;
+	width: 62px;
+	height: 24px;
+	cursor: pointer;
+	padding: 2px;
+}
+
+#qstat {
+	display: inline-block;
+	background-color: #dddddd;
+	border-radius: 7px;
+	width: 36px;
+	height: 14px;
+	cursor: pointer;
+	padding: 2px;
+	font-size: 11px;
+	color: #000;
+}
+
+#dbg {
+	border: solid 1px #151515;
+	background-color: #000000;
+	color: #dddddd;
+	visibility: hidden;
+	/**/
+}
+
+.box span:nth-last-of-type(2) {
+	position: relative;
+	top: -2px;
+}
+
+.yoko {
+	width: 75px;
+	height: 6px;
+}
+
+.tate {
+	position: relative;
+	top: 2px;
+	width: 6px;
+	height: 75px;
+}
+
+.pbar {
+	position: relative;
+	z-index: 2;
+	top: -135px;
+	width: 6px;
+	height: 75px;
+}
+
+.equal {
+	margin: 8px;
+}
+
+.equal .yoko {
+	border: solid 1px #505050;
+	background-color: #ccffff;
+	position: relative;
+	top: 65px;
+}
+
+#confset {
+	display: inline-block;
+	float: right;
+	margin-right: 80px;
+}
+
+#confset label {
+	color: #fff;
+}

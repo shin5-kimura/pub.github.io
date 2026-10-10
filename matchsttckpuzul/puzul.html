@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Matchstick Puzzle</title>
+</head>
+
+<body>
+
+  <header>
+    <a target="_blank" href="./manual.pdf" id="pdf">使い方PDF</a>
+    <p id="msg">マッチ棒を1本だけ移動して正しい式にしてください。数字は下の例に従ってください。</p>
+    <img id="judge" src="images/chars.png">
+  </header>
+
+
+  <main id="wrapper" style="visibility: hidden;">
+    <div class="box">
+      <span class="tate"></span><span class="yoko"></span><span class="tate"></span><br>
+      <span class="tate"></span><span class="yoko"></span><span class="tate"></span><br>
+      <span class="yoko"></span><br>
+      <span class="pbar"></span>
+    </div>
+    <div class="equal">
+      <span class="yoko"></span><br><span class="yoko"></span>
+    </div>
+  </main>
+
+
+  <div id="confset">
+    <label>
+      <select>
+        <option>1</option>
+        <option selected>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      桁
+    </label>
+    <label>
+      <select>
+        <option>1</option>
+        <option selected>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      項
+    </label>
+    <div id="qstat" onclick="quizStart()">出題</div>
+  </div>
+  <br>
+  <div id="btn" onclick="restring()">判定</div>
+
+
+</body>
+<script src="main.js"></script>
+<script src="quiz.js"></script>
+
+</html>
